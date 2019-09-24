@@ -1,11 +1,12 @@
 Pod::Spec.new do |spec|
-  spec.name         = 'Filestack'
+  spec.name         = 'Filestack-Stitch'
   spec.version      = File.read('./VERSION')
   spec.license      = { :type => 'Apache License, Version 2.0"', :file => "LICENSE" }
   spec.homepage     = 'https://github.com/filestack/filestack-ios'
   spec.authors      = { 'Filestack' => 'ios@filestack.com' }
   spec.summary      = 'Official iOS SDK for Filestack.'
   spec.source       = { :git => 'https://github.com/filestack/filestack-ios.git', :tag => spec.version }
+  spec.swift_versions = ['4', '4.2']
 
   spec.ios.deployment_target  = '9.0'
 
